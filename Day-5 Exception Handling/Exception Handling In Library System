@@ -1,0 +1,24 @@
+public class Exception_Handling {
+    public static void main(String[] args) {
+       Library lib=new Library();
+       lib.borrow(2);
+
+    }}
+
+class Library{
+    int available_books=4;
+
+    public void borrow(int bookrequested){
+        try {
+            int[] books = {
+                    101, 102, 103
+            };
+
+            System.out.println("book requested: " + books[bookrequested]);
+        }
+
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Book u requested for does not exist");
+    }
+    }
+}
