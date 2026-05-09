@@ -1,0 +1,30 @@
+public class Exception_Handling {
+    public static void main(String[] args) {
+        try{//exception generating LOC
+            int a=10;
+            int b=a/0;
+            System.out.println(b);
+        }
+        catch(Exception e){//exception handling LOC
+            System.out.println("ArithmeticException");
+      }
+        finally {
+            //always execute
+            System.out.println("executed successfully");
+        }
+        try {
+            int[] arr = {1, 2, 3};
+            System.out.println(arr[4]);
+        }
+        catch(ArithmeticException e){
+            System.out.println("Arithmatic exception occurs");
+
+        }
+
+        catch(IndexOutOfBoundsException e) {
+            System.out.println("out ot bound ");
+        }
+        }
+
+    
+}
